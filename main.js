@@ -21,13 +21,14 @@ function clickedButton() {
   firstPage.classList.remove("hidden");
   secondPage.classList.add("hidden");
   let inputEl = document.getElementById("input-el");
-  inputEl.value = ""; //to make the input field value of the first page clear
+  inputEl.value = ""; //to make the input field value of the first page clear when back to the first page
+
+  const error = document.getElementById("error");
+  error.textContent = ""; //to make the erroe message of p tag clear when back to the first page
 
   mainBackground.style.width = "57vw"; //大1ページ目
   mainBackground.style.height = "70vh";
 }
-
-
 
 //１ページ目
 // if (window.matchMedia("(max-width: 1440px)").matches) {
