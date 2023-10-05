@@ -1,0 +1,213 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+html {
+  font-family: "Overpass", sans-serif;
+  background-color: antiquewhite;
+}
+
+#main {
+  border-radius: 10px;
+  background-color: white;
+  width: 57vw;
+  margin: auto;
+  height: 70vh;
+  margin-top: 12vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.leftSide {
+  padding-left: 3vw;
+  width: 26vw;
+}
+
+.hidden {
+  display: none !important;
+}
+
+#bigLetter {
+  font-weight: 900;
+  font-size: 3.5vw;
+  text-shadow: 0 0 1px black;
+  margin-bottom: 0;
+  margin: 0;
+}
+
+.picturePc {
+  height: 65vh;
+  width: 26vw;
+}
+
+.pictureSp {
+  display: none;
+}
+
+.rightSide {
+  width: 27vw;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+}
+
+.second {
+  margin-left: 5vw;
+  color: red;
+  display: none;
+}
+
+#input-el {
+  width: 22vw;
+  height: 6vh;
+  margin-bottom: 2.5vh;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+.form p {
+  margin-top: 3vh;
+}
+
+#input-el:hover {
+  cursor: pointer;
+}
+
+button {
+  width: 22.5vw;
+  height: 7vh;
+  color: white;
+  background-color: hsl(234, 29%, 20%);
+  border: none;
+  border-radius: 10px;
+}
+
+button:hover {
+  cursor: pointer;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 141, 235, 1) 0%,
+    rgba(255, 157, 62, 1) 100%
+  );
+}
+
+#second-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 70vh;
+}
+
+#thanks {
+  font-weight: bold;
+  font-size: 3vw;
+  width: 20vw;
+  text-shadow: 0 0 1px black;
+}
+
+.info {
+  width: 22vw;
+}
+
+#address {
+  font-weight: bold;
+}
+
+.paragraph p {
+  display: flex;
+  align-items: center;
+  font-size: 1vw;
+}
+
+.paragraph img {
+  scale: 0.8;
+}
+
+.subTitle {
+  font-size: 1vw;
+}
+
+.secondimg {
+  scale: 2.5;
+  position: absolute;
+  right: 8.5vw;
+  bottom: 2vh;
+}
+
+.checked {
+  position: relative;
+}
+
+#error {
+  color: red;
+  margin-left: 6vw;
+}
+
+@media only screen and (max-width: 375px) {
+  #main {
+    width: 80vw;
+    border-radius: 0;
+    height: 78vh;
+  }
+
+  #bigLetter {
+    font-size: 3vh;
+    margin-bottom: 2vh;
+  }
+
+  .subTitle {
+    font-size: 1.3vh;
+  }
+
+  .paragraph p {
+    font-size: 1.3vh;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .rightSide {
+    height: 20vh;
+    width: 100%;
+  }
+
+  .leftSide {
+    width: 65vw;
+    margin-top: 5vh;
+  }
+
+  #input-el {
+    width: 63vw;
+  }
+
+  button {
+    width: 65vw;
+  }
+  .paragraph p {
+    margin-top: 2vh;
+  }
+
+  .picturePc {
+    display: none;
+  }
+
+  .pictureSp {
+    display: block;
+    width: 80vw;
+  }
+}
