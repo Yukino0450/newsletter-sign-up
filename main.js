@@ -2,12 +2,32 @@ let firstPage = document.getElementById("first-page");
 let secondPage = document.getElementById("second-page");
 let mainBackground = document.getElementById("main");
 
+// function submit() {
+//   let inputEl = document.getElementById("input-el").value;
+//   var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+//   const error = document.getElementById("error");
+//   if (inputEl == "" || inputEl == emailPattern) {
+//     error.textContent = "Valid email required!";
+//   } else {
+//     let address = document.getElementById("address");
+//     address.textContent = inputEl;
+
+//     firstPage.classList.add("hidden");
+//     secondPage.classList.remove("hidden");
+//     mainBackground.style.width = "27vw"; //大２ページ目
+//     mainBackground.style.height = "65vh";
+//   }
+// }
+
 function submit() {
   let inputEl = document.getElementById("input-el").value;
+  var regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
   const error = document.getElementById("error");
-  if (inputEl == "") {
+  console.log(regex.test(inputEl));
+  if (!regex.test(inputEl)) {
     error.textContent = "Valid email required!";
   } else {
+    console.log("passed");
     let address = document.getElementById("address");
     address.textContent = inputEl;
     firstPage.classList.add("hidden");
@@ -45,14 +65,6 @@ function clickedButton() {
 //   } else if (window.matchMedia("(min-width:375px)").matches) {
 //     mainBackground.style.width = "80vw";
 //   }
-
-//・初期画面のボタン押したら起こること
-//ページが２ページ目に変わる☑
-//paragraphの中に、１ページ目で入力したメールアドレスが入っている。
-
-//・ページの切り替わったあとに起こる動作
-//dismiss　messageボタン押したら、始めのページに戻る
-//→１ページ目のhiddenを削除し、２ページ目にhiddenを追加
 
 // function submit() {
 //   let firstPage = document.getElementById("first-page");
